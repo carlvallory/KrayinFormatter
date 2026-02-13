@@ -1,0 +1,28 @@
+{
+    "name": "vallory/krayin-formatter",
+    "description": "Configurable Number Formatting for Krayin CRM",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vallory",
+            "email": "carlvallory@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "krayin/laravel-crm": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vallory\\KrayinFormatter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vallory\\KrayinFormatter\\Providers\\KrayinFormatterServiceProvider"
+            ]
+        }
+    }
+}
