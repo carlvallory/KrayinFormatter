@@ -35,7 +35,7 @@ Open the `composer.json` file in your Krayin root directory and add/update the `
 Run the following command in your terminal:
 
 ```bash
-composer require carlvallory/krayin-formatter:@dev
+composer require carlvallory/KrayinFormatter:@dev
 ```
 
 ### 3. Clear Cache (Optional but Recommended)
@@ -61,5 +61,5 @@ php artisan config:clear
 To remove the package and revert to default Krayin formatting behavior:
 
 ```bash
-composer remove carlvallory/krayin-formatter
+composer remove carlvallory/KrayinFormatter
 ```
