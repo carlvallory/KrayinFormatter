@@ -1,5 +1,6 @@
 {
     "name": "carlvallory/krayin-formatter",
+    "version": "1.0.1",
     "description": "Configurable Number Formatting for Krayin CRM",
     "type": "library",
     "license": "MIT",

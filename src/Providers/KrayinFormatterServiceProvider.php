@@ -15,6 +15,15 @@ class KrayinFormatterServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'krayin-formatter');
+        $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'krayin-formatter');
+
+        // Register Middleware
+        $this->app['router']->pushMiddlewareToGroup('web', \Vallory\KrayinFormatter\Http\Middleware\SetTimezone::class);
+
+        // Inject Timezone Script
+        \Illuminate\Support\Facades\Event::listen('admin.layout.head.after', function($viewRenderEventManager) {
+            $viewRenderEventManager->addTemplate('krayin-formatter::timezone_script');
+        });
 
         $this->app->booted(function () {
              $config = config('core_config', []);

@@ -54,7 +54,12 @@ php artisan config:clear
 4.  Select your preferred **Thousand Separator**:
     - **Comma (,)** -> `1,234.56`
     - **Dot (.)** -> `1.234,56`
-5.  Click **Save Configuration**.
+5.  Select your preferred **Date Format**:
+    - Options: `d M Y`, `d-m-Y`, `m/d/Y`, `Y-m-d`.
+6.  Select your preferred **Timezone**:
+    - **Automatic (Browser Detect)**: Will use your computer's timezone.
+    - **Manual**: Select a specific timezone from the list.
+7.  Click **Save Configuration**.
 
 ## Uninstallation
 
