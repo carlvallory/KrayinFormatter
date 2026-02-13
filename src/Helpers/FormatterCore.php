@@ -82,4 +82,13 @@ class FormatterCore extends Core
 
         return $options;
     }
+    /**
+     * Get the base currency code from config.
+     *
+     * @return string
+     */
+    public function getBaseCurrencyCode()
+    {
+        return config('app.currency');
+    }
 }
